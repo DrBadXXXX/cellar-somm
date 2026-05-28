@@ -153,6 +153,43 @@
         </div>
 
         <div class="faq-item">
+<h3>Shared AI Key Usage vs Personal Gemini Key</h3>
+<p>
+Cellar Somm’s Shared AI Key uses app-level quota limits per user, initially set at  <strong>250,000 input tokens/month</strong>.
+</p>
+<p>
+Estimated usage capability for some common AI calls at the 250,000 input-token baseline:
+</p>        
+
+<ul>
+  <li><strong>Wine summaries:</strong> ~60–200 per month</li>
+  <li><strong>Bottle IDs:</strong> ~30–120 per month</li>
+  <li><strong>Multi-page invoice parses:</strong> ~6–25 per month</li>
+</ul>
+</div>
+<p>
+Estimated “AI Cellar” calls at the same 250,000 input-token baseline:
+</p>
+<ul>
+  <li>25 bottles: ~555 calls/month</li>
+  <li>100 bottles: ~138 calls/month</li>
+  <li>500 bottles: ~27 calls/month</li>
+  <li>1,000 bottles: ~13 calls/month</li>
+  <li>2,000 bottles: ~6 calls/month</li>
+</ul>
+
+<h4>What changes with your own personal Gemini key (BYOK)?</h4>
+<p>
+When you use your own key, Cellar Somm shared-key throttles no longer apply. You use your own Google quota directly.
+With Gemini free-tier request limits (about <strong>1,500 requests/day</strong>, ~<strong>45,000/month</strong>), request capacity is much higher than shared-key monthly request presets and it's unlikely that you will hit any Gemini limits. The Cellar Somm shared key should be looked at as a free way for new users to experience the app but to get the most performance from the Cellar Somm it's recommended to get your own free Gemini API key.
+</p>
+
+<p>
+In short: <strong>same feature behavior, much higher personal request headroom</strong>.  
+(Exact capacity still depends on your own Gemini plan, token usage, and Google limits.)
+</p>
+
+        <div class="faq-item">
             <h3>How is my Gemini API key handled?</h3>
             <p>Your Gemini API key is stored in Apple Keychain on your device. Cellar Somm does not store your key on our servers. AI requests are sent directly from your device to Google Gemini.</p>
         </div>
@@ -187,7 +224,7 @@
 
         <div class="faq-item">
             <h3>How do I manage my subscription?</h3>
-            <p>GrooveNotes uses an annual subscription. You can manage or cancel your subscription at any time through your Apple ID settings on your device under Settings > Apple ID > Subscriptions.</p>
+            <p>Cellar Somm uses an annual subscription. You can manage or cancel your subscription at any time through your Apple ID settings on your device under Settings > Apple ID > Subscriptions.</p>
         </div>
 
         <footer>
